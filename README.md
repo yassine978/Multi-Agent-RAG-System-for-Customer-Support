@@ -36,18 +36,18 @@ Pour vous simplifier la démonstration, une interface a été crée. Pour la lan
 pip install -r requirements.txt
 streamlit run app.py
 ```
-
 L'interface Streamlit s'ouvrira dans votre navigateur.
 Pour l'instant, une réponse basique est donnée.
 Votre travail est d'améliorer la réponse afin de la rendre pertinente pour le cas d'usage en question.
 
+### Exemple:
 Par exemple, voici les réponses attendues pour deux questions distinctes:
 
-Q. Quels modes de paiement acceptez-vous ?
+**Q. Quels modes de paiement acceptez-vous ?**
 
 R. Nous acceptons les paiements par carte bancaire, prélèvement automatique, virement bancaire et PayPal. Le prélèvement automatique garantit de ne jamais manquer une échéance.
 
-Q. Y a-t-il des frais de résiliation si je suis engagé ?
+**Q. Y a-t-il des frais de résiliation si je suis engagé ?**
 
 R. Si vous êtes encore en période d'engagement, des frais égaux au montant des mensualités restantes peuvent s'appliquer. Si vous êtes hors engagement (après 12 ou 24 mois), la résiliation est gratuite.
 
@@ -129,7 +129,7 @@ Le README.md de votre projet doit détailler :
 
 ---
 
-Votre travail consistera à:
+**Exemples d'étapes à réaliser**:
 - Indexer les documents PDFs dans une base vecteur en local
 - Exploiter les fichier excels en constituant des outils accessibles au LLM
 - Réaliser une architecture Agentique adaptée pour fournir des réponses pertinentes
