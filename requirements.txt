@@ -1,0 +1,4 @@
+# Web interface
+streamlit>=1.28.0
+
+# Langchain, langgraph, ...
