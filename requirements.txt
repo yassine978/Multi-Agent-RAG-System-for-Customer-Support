@@ -1,5 +1,29 @@
 # Web interface
-streamlit>=1.28.0
+streamlit
 
+# Data processing
 pandas
-# Langchain, langgraph, ...
+openpyxl
+
+# LangChain ecosystem
+langchain
+langchain-google-genai
+langchain-community
+langchain-experimental
+langchain-text-splitters
+langgraph
+
+# Vector database and embeddings
+chromadb
+sentence-transformers
+
+# PDF processing
+pypdf
+
+# Monitoring and tracing
+langfuse
+# Environment management
+python-dotenv
+
+# Utilities
+tiktoken
