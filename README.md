@@ -108,6 +108,7 @@ src/
 │   ├── orchestrator.py     # Orchestration LangGraph
 │   ├── router_agent.py     # Classification des questions
 │   ├── rag_agent.py        # Agent RAG avec recherche PDF
+│   ├── rag_tools.py        # Outils LangChain pour RAG
 │   ├── sql_agent.py        # Agent SQL avec pattern ReAct
 │   └── sql_tools.py        # Outils LangChain pour requêtes données
 ├── data/
