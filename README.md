@@ -12,39 +12,9 @@ Système multi-agent intelligent pour le support client de **TelecomPlus**, un o
 ## Architecture du Système
 
 ### Vue d'ensemble
+<p align="center">
+  <img src="./rag.gif" alt="Project Architecture">
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                              ORCHESTRATOR                                    │
-│                           (LangGraph StateGraph)                             │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│    ┌──────────────┐                                                          │
-│    │    ROUTER    │  Classifie la question en 4 types:                       │
-│    │    AGENT     │  RAG | SQL | HYBRID | GENERAL                            │
-│    └──────┬───────┘                                                          │
-│           │                                                                  │
-│           ▼                                                                  │
-│    ┌──────────────────────────────────────────────────────────┐              │
-│    │                    ROUTING CONDITIONNEL                   │              │
-│    └──────────────────────────────────────────────────────────┘              │
-│           │                    │                    │                        │
-│           ▼                    ▼                    ▼                        │
-│    ┌────────────┐       ┌────────────┐       ┌────────────┐                  │
-│    │    RAG     │       │    SQL     │       │  GENERAL   │                  │
-│    │   AGENT    │       │   AGENT    │       │  RESPONSE  │                  │
-│    └─────┬──────┘       └─────┬──────┘       └────────────┘                  │
-│          │                    │                                              │
-│          │    (HYBRID)        │                                              │
-│          └────────┬───────────┘                                              │
-│                   ▼                                                          │
-│            ┌────────────┐                                                    │
-│            │ SYNTHESIS  │  Combine RAG + SQL pour questions hybrides         │
-│            │   AGENT    │                                                    │
-│            └────────────┘                                                    │
-│                                                                              │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
 
 ### Composants Principaux
 
